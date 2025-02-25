@@ -16,7 +16,7 @@ import { SiRedux, SiMongodb } from "react-icons/si";
 const Home = () => {
   return (
     <Container className="container p-5 mt-5">
-      <Row>
+      <Row className="mt-5">
         <Col className="d-flex-c-a">
           <div style={{ height: "300px" }}>
             <img
@@ -46,10 +46,6 @@ const Home = () => {
         </Col>
       </Row>
 
-      <div>
-        <h3>myWork</h3>
-      </div>
-
       <div className="d-flex-c-a card  p-5 mt-5 bg-black text-white">
         <div className="w-50">
           <a className="text-white text-decoration-none" href="">
@@ -64,6 +60,8 @@ const Home = () => {
             aliquam eveniet quaerat accusantiumt.
           </p>
         </div>
+
+
         <div>
           <img src="/ft.png" alt="" />
         </div>

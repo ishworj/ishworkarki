@@ -17,7 +17,7 @@ const Header = () => {
             href="#home"
             className="d-flex align-items-center gap-3"
           >
-            <div className="text-success fs-3 d-flex">
+            <div className="text-success fs-1 d-flex">
               <GiSharpCrown color="success" />
             </div>
             <div className="text-white"> Ishwor karki</div>
