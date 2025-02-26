@@ -1,7 +1,9 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer.jsx";
 import Header from "./components/Header.jsx";
-import Home from "./components/Home.jsx";
+import Work from "./components/Work.jsx";
+import Home from "./components/home.jsx";
 function App() {
   return (
     <>
@@ -11,7 +13,10 @@ function App() {
         </div>
         <div className="container bg-black text-light">
           <Header />
-          <Home />
+          <Routes>
+            <Route path="*" element={<Home />} />
+            <Route path="/work" element={<Work />} />
+          </Routes>
           <Footer />
         </div>
       </div>

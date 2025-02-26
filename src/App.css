@@ -50,5 +50,8 @@ body {
 }
 
 .skill-item{
-    text-shadow: 0px 0px 5px white,-2px -2px 5px white,0px 0px 10px cyan;
+    text-shadow: -2px -2px 5px white,0px 0px 10px cyan;
+}
+.skill-item p {
+  padding-top: 5px;
 }

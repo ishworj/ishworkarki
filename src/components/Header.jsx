@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import { GiSharpCrown } from "react-icons/gi";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -10,9 +11,9 @@ const Header = () => {
       <Navbar
         expand="lg"
         className="bg-body-tertiary"
-        style={{ backgroundColor: "inherit !important"}}
+        style={{ backgroundColor: "inherit !important" }}
       >
-        <Container >
+        <Container>
           <Navbar.Brand
             href="#home"
             className="d-flex align-items-center gap-3"
@@ -28,12 +29,13 @@ const Header = () => {
               <Link className="nav-link" to="/">
                 About
               </Link>
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="/work">
                 Work
               </Link>
               <Link className="nav-link" to="/">
                 Skills
               </Link>
+
               <Link className="nav-link" to="/">
                 Contact
               </Link>
