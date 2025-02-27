@@ -9,7 +9,8 @@ function App() {
     <>
       <div className="wrapper bg-black">
         <div className="firstLook d-flex-c-a">
-          <div>IshworKarki.com</div>
+          <div>
+            Welcome to IshworKarki.com</div>
         </div>
         <div className="container bg-black text-light">
           <Header />

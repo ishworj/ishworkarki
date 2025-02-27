@@ -16,19 +16,18 @@ import { SiMongodb, SiRedux } from "react-icons/si";
 const Home = () => {
   return (
     <Container className="container p-md-5 mt-5">
+      <Row>
+        <Col >
+          <img src="/profilecartoon.png" alt="" />
+        </Col>
+      </Row>
       <Row className="mt-5">
         <Col className="d-flex-c-a">
-          <div style={{ height: "300px" }}>
-            <img
-              src="/myprofile.png"
-              alt="ishwor karki image"
-              className="h-100"
-            />
-          </div>
+          <img src="/profilecartoon.png" alt="" />
         </Col>
         <Col className="d-flex-c-a">
           <div className=" text-white">
-            <h4 className="text-success">Your Next Full-Stack Developer</h4>
+            <h4 className="text-success">Your Next Full-Stack Web Developer</h4>
             <h5 className="text-success"> Ready to Drive Results:</h5>
             <p>
               With expertise in{" "}
@@ -49,7 +48,7 @@ const Home = () => {
       <div className="m-4" style={{ height: "500px" }}></div>
 
       <div className="skills text-center" id="skills">
-        <h3>My skills</h3>
+        <h3>My Tech Stacks</h3>
         <div className="d-flex justify-content-around pt-5 flex-wrap gap-3">
           <div className="skill-item">
             <FaHtml5 size={40} title="HTML" color="#E34F26" />
