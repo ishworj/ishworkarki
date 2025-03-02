@@ -12,8 +12,8 @@ body {
   align-items: center;
 }
 
-.bg-black{
-    background-color: black !important;
+.bg-black {
+  background-color: black !important;
 }
 .firstLook {
   height: 100vh;
@@ -30,7 +30,6 @@ body {
 }
 
 @keyframes fadeout {
-  
   25% {
     opacity: 1;
   }
@@ -38,6 +37,45 @@ body {
   100% {
     opacity: 0;
     visibility: hidden;
+  }
+}
+
+/* logo container */
+.logo-container{
+  position: fixed;
+  top: 40%;
+  left: 0%;
+  background-color: rgba(255, 255, 255, 0.132);
+  padding: 5px 1px;
+  border-radius: 20px;
+}
+.logo-container img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.648) ;
+}
+.typed-effect {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  color: transparent;
+  background: linear-gradient(to right, #e6dcda, #179b06);
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: typing 3s steps(30, end) forwards;
+}
+
+/* Typing Animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
 
@@ -49,8 +87,8 @@ body {
   text-decoration-color: antiquewhite;
 }
 
-.skill-item{
-    text-shadow: -2px -2px 5px white,0px 0px 10px cyan;
+.skill-item {
+  text-shadow: -2px -2px 5px white, 0px 0px 10px cyan;
 }
 .skill-item p {
   padding-top: 5px;

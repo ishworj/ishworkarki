@@ -2,6 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -12,26 +13,28 @@ import {
   FaBootstrap,
 } from "react-icons/fa";
 import { SiMongodb, SiRedux } from "react-icons/si";
+import { LiaHandPointer } from "react-icons/lia";
+import Work from "./Work";
 
 const Home = () => {
   return (
-    <Container className="container p-md-5 mt-5">
-      <Row>
-        <Col >
-          <img src="/profilecartoon.png" alt="" />
-        </Col>
-      </Row>
+    <Container className="container">
+      <div className="d-flex gap-3 flex-column logo-container">
+        <img src="/git.png" alt="git" />
+        <img src="/linked.png" alt="linked" />
+        <img src="/email.png" alt="email" />
+      </div>
       <Row className="mt-5">
         <Col className="d-flex-c-a">
           <img src="/profilecartoon.png" alt="" />
         </Col>
-        <Col className="d-flex-c-a">
+        <Col className="d-flex-c-a flex-column">
           <div className=" text-white">
-            <h4 className="text-success">Your Next Full-Stack Web Developer</h4>
-            <h5 className="text-success"> Ready to Drive Results:</h5>
+            <h4 className="typed-effect">Your Next Full-Stack Web Developer</h4>
+            <h5> Ready to Drive Results:</h5>
             <p>
               With expertise in{" "}
-              <b className="text-success">
+              <b style={{ color: "#179b06" }}>
                 React.js, Node.js, MongoDb, and JavaScript,
               </b>{" "}
               I bring the ability to build efficent, scalable applicaitons that
@@ -42,10 +45,16 @@ const Home = () => {
               help dirive your projects forward and add value form day one.
             </p>
           </div>
+          <div className="d-flex w-100  gap-2">
+            <Button variant="dark border-light">Contact me</Button>
+            <Button variant="dark border-light">
+              See Resume <LiaHandPointer />{" "}
+            </Button>
+          </div>
         </Col>
       </Row>
 
-      <div className="m-4" style={{ height: "500px" }}></div>
+      <Work />
 
       <div className="skills text-center" id="skills">
         <h3>My Tech Stacks</h3>
@@ -88,6 +97,51 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <section className=" my-5 p-md-5">
+        <h2 className="text-center mb-5">
+          <span>About Me</span>
+        </h2>
+
+        <div className="container d-flex flex-column flex-md-row align-items-center justify-content-center ">
+          <div className="d-flex justify-content-center ">
+            <img
+              src="/myprofile.png"
+              alt="Ishwor's image"
+              className="img-fluid rounded-circle"
+            />
+          </div>
+
+          <div className="my-bio ms-md-5">
+            <h3 className="h4">Ishwor Karki</h3>
+            <p>
+              I am a Full-Stack Web Developer skilled in React.js, Node.js,
+              MongoDB, and JavaScript, with a passion for building scalable,
+              high-performance applications. From designing intuitive front-end
+              interfaces to developing secure and efficient back-end systems, I
+              enjoy working across the entire software development lifecycle
+              (SDLC).
+            </p>
+
+            <p>
+              Eager to contribute to a dynamic team, I am open to any
+              entry-level opportunities where I can contribute in designing,
+              developing, and optimizing web applications. With a strong
+              problem-solving mindset and adaptability, I am ready to make an
+              impact and grow alongside innovative projects. Let’s connect!
+            </p>
+
+            <div>
+              <div className="fw-bold mb-2">Interests:</div>
+              <div className="d-flex flex-wrap gap-3">
+                <span className="badge bg-primary">Coding</span>
+                <span className="badge bg-info">Music/football</span>
+                <span className="badge bg-success">Learning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </Container>
   );
 };

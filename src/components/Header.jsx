@@ -3,7 +3,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import { GiSharpCrown } from "react-icons/gi";
-import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -26,21 +25,14 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto ">
-              <Nav.Link href="https://www.google.com" target="_blank">
-                Home
-              </Nav.Link>
               <Link className="nav-link" to="/">
-                Aboutd
+                About me
               </Link>
               <Link className="nav-link" to="/work">
                 Work
               </Link>
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="#skills">
                 Skills
-              </Link>
-
-              <Link className="nav-link" to="/">
-                Contact
               </Link>
             </Nav>
           </Navbar.Collapse>
