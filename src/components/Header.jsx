@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import { GiSharpCrown } from "react-icons/gi";
 
 const Header = () => {
@@ -10,13 +10,10 @@ const Header = () => {
       <Navbar
         expand="lg"
         className="bg-body-tertiary"
-        style={{ backgroundColor: "inherit !important" }}
+        style={{ backgroundColor: "inherit !important" }} id="navbar"
       >
         <Container>
-          <Navbar.Brand
-            href="#home"
-            className="d-flex align-items-center gap-3"
-          >
+          <Navbar.Brand href="/" className="d-flex align-items-center gap-3">
             <div className="text-success fs-1 d-flex">
               <GiSharpCrown color="success" />
             </div>
@@ -25,13 +22,13 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto ">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="/#about-me">
                 About me
               </Link>
               <Link className="nav-link" to="/work">
                 Work
               </Link>
-              <Link className="nav-link" to="#skills">
+              <Link className="nav-link" to="/#skills">
                 Skills
               </Link>
             </Nav>

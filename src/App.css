@@ -55,6 +55,16 @@ body {
   border-radius: 50%;
   box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.648) ;
 }
+
+.goToTop{
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  color: blue;
+  font-size: 60px;
+  font-weight:bolder;
+  border-radius: 50%;
+}
 .typed-effect {
   font-size: 24px;
   font-weight: bold;

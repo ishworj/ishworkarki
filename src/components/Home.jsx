@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -15,15 +15,12 @@ import {
 import { SiMongodb, SiRedux } from "react-icons/si";
 import { LiaHandPointer } from "react-icons/lia";
 import Work from "./Work";
+import ResumeModal from "./ResumeModal";
 
 const Home = () => {
+  const [modalShow, setModalShow] = React.useState(false);
   return (
     <Container className="container">
-      <div className="d-flex gap-3 flex-column logo-container">
-        <img src="/git.png" alt="git" />
-        <img src="/linked.png" alt="linked" />
-        <img src="/email.png" alt="email" />
-      </div>
       <Row className="mt-5">
         <Col className="d-flex-c-a">
           <img src="/profilecartoon.png" alt="" />
@@ -46,74 +43,74 @@ const Home = () => {
             </p>
           </div>
           <div className="d-flex w-100  gap-2">
-            <Button variant="dark border-light">Contact me</Button>
-            <Button variant="dark border-light">
+            <a href="#contact-me">
+              <Button variant="dark border-light">Contact me</Button>
+            </a>
+            <Button
+              variant="dark border-light"
+              onClick={() => setModalShow(true)}
+            >
               See Resume <LiaHandPointer />{" "}
             </Button>
           </div>
         </Col>
       </Row>
 
+      <ResumeModal show={modalShow} onHide={() => setModalShow(false)} />
+
       <Work />
 
-      <div className="skills text-center" id="skills">
-        <h3>My Tech Stacks</h3>
-        <div className="d-flex justify-content-around pt-5 flex-wrap gap-3">
-          <div className="skill-item">
-            <FaHtml5 size={40} title="HTML" color="#E34F26" />
-            <p>HTML</p>
-          </div>
-          <div className="skill-item">
-            <FaCss3Alt size={40} title="CSS" color="#1572B6" />
-            <p>CSS</p>
-          </div>
-          <div className="skill-item">
-            <FaJs size={40} title="JavaScript" color="#F7DF1E" />
-            <p>JavaScript</p>
-          </div>
-          <div className="skill-item">
-            <FaBootstrap size={40} title="Bootstrap" color="#563d7c" />
-            <p>Bootstrap</p>
-          </div>
-          <div className="skill-item">
-            <FaReact size={40} title="React" color="#61DAFB" />
-            <p>React</p>
-          </div>
-          <div className="skill-item">
-            <FaNode size={40} title="Node.js" color="#68A063" />
-            <p>Node.js</p>
-          </div>
-          <div className="skill-item">
-            <SiMongodb size={40} title="MongoDB" color="#47A248" />
-            <p>MongoDB</p>
-          </div>
-          <div className="skill-item">
-            <FaGithub size={40} title="GitHub" color="#333333" />
-            <p>GitHub</p>
-          </div>
-          <div className="skill-item">
-            <SiRedux size={40} title="Redux" color="#764ABC" />
-            <p>Redux</p>
+      <section id="skills">
+        <div className="skills text-center">
+          <h3>My Tech Stacks</h3>
+          <div className="d-flex justify-content-around pt-5 flex-wrap gap-3">
+            <div className="skill-item">
+              <FaHtml5 size={40} title="HTML" color="#E34F26" />
+              <p>HTML</p>
+            </div>
+            <div className="skill-item">
+              <FaCss3Alt size={40} title="CSS" color="#1572B6" />
+              <p>CSS</p>
+            </div>
+            <div className="skill-item">
+              <FaJs size={40} title="JavaScript" color="#F7DF1E" />
+              <p>JavaScript</p>
+            </div>
+            <div className="skill-item">
+              <FaBootstrap size={40} title="Bootstrap" color="#563d7c" />
+              <p>Bootstrap</p>
+            </div>
+            <div className="skill-item">
+              <FaReact size={40} title="React" color="#61DAFB" />
+              <p>React</p>
+            </div>
+            <div className="skill-item">
+              <FaNode size={40} title="Node.js" color="#68A063" />
+              <p>Node.js</p>
+            </div>
+            <div className="skill-item">
+              <SiMongodb size={40} title="MongoDB" color="#47A248" />
+              <p>MongoDB</p>
+            </div>
+            <div className="skill-item">
+              <FaGithub size={40} title="GitHub" color="#333333" />
+              <p>GitHub</p>
+            </div>
+            <div className="skill-item">
+              <SiRedux size={40} title="Redux" color="#764ABC" />
+              <p>Redux</p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <section className=" my-5 p-md-5">
+      <section className=" my-5 p-md-5" id="about-me">
         <h2 className="text-center mb-5">
           <span>About Me</span>
         </h2>
 
-        <div className="container d-flex flex-column flex-md-row align-items-center justify-content-center ">
-          <div className="d-flex justify-content-center ">
-            <img
-              src="/myprofile.png"
-              alt="Ishwor's image"
-              className="img-fluid rounded-circle"
-            />
-          </div>
-
-          <div className="my-bio ms-md-5">
-            <h3 className="h4">Ishwor Karki</h3>
+        <div className="container d-flex gap-5 flex-md-row  flex-sm-column-reverse align-items-center ">
+          <div className="my-bio ms-md-5 ">
             <p>
               I am a Full-Stack Web Developer skilled in React.js, Node.js,
               MongoDB, and JavaScript, with a passion for building scalable,
@@ -139,6 +136,21 @@ const Home = () => {
                 <span className="badge bg-success">Learning</span>
               </div>
             </div>
+          </div>
+          <div
+            className="text-center fade-in-right"
+          >
+            <div
+              className="border border-3 overflow-hidden rounded-circle "
+              style={{ height: "300px", width: "300px" }}
+            >
+              <img
+                src="/myprofile.png"
+                alt="Ishwor's image"
+                className="img-fluid p-3"
+              />
+            </div>
+            <h5>Ishwor Karki</h5>
           </div>
         </div>
       </section>

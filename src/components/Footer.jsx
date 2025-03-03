@@ -2,7 +2,7 @@ import React from "react";
 import Col from "react-bootstrap/esm/Col";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Footer = () => {
   return (
@@ -12,19 +12,17 @@ const Footer = () => {
         <div className="d-flex-c-a pt-md-3">
           <Col>
             <p className="text-decoration-underline">Links</p>
-            <Link className="nav-link" to="/hero">
+            <Link className="nav-link" to="/#navbar">
               Home
             </Link>
 
-            <Link className="nav-link" to="/skills">
+            <Link className="nav-link" to="/#skills">
               Skills
             </Link>
 
-            <Link className="nav-link" to="/contact">
-              Contact
-            </Link>
+            <Link className="nav-link">Contact</Link>
 
-            <Link className="nav-link" to="/about">
+            <Link className="nav-link" to="/#about-me">
               About
             </Link>
           </Col>

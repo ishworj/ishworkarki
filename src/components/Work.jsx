@@ -5,11 +5,17 @@ import { CiLocationArrow1 } from "react-icons/ci";
 const Work = () => {
   return (
     <Container className="container p-md-5 mt-5">
-
-      <h1 className="text-center">Featured projects</h1>
+      <h1 className="text-center mb-5 ">Featured projects</h1>
       <div className="w-50">
         <a className="text-white text-decoration-none" href="">
-          <h6>
+          <h6
+            onClick={() => {
+              window.open(
+                "https://finance-tracker-jet-rho.vercel.app/",
+                "_blank"
+              );
+            }}
+          >
             FinanceTracker.com <CiLocationArrow1 />
           </h6>
         </a>
