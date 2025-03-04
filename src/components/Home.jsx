@@ -16,6 +16,7 @@ import { SiMongodb, SiRedux } from "react-icons/si";
 import { LiaHandPointer } from "react-icons/lia";
 import Work from "./Work";
 import ResumeModal from "./ResumeModal";
+import TechStackTree from "./TechStackTree";
 
 const Home = () => {
   const [modalShow, setModalShow] = React.useState(false);
@@ -103,6 +104,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+    <TechStackTree />
 
       <section className=" my-5 p-md-5" id="about-me">
         <h2 className="text-center mb-5">

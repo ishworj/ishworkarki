@@ -17,7 +17,7 @@ const Header = () => {
             <div className="text-success fs-1 d-flex">
               <GiSharpCrown color="success" />
             </div>
-            <div className="text-white"> Ishwor karki</div>
+            <div className="text-white"> Ishwor karki | Web Developer</div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
