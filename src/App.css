@@ -6,6 +6,11 @@ body {
   margin: 0;
 }
 
+.btn:hover {
+  background-color: #06519b78 !important;
+  transform: scale(1.1);
+}
+
 .d-flex-c-a {
   display: flex;
   justify-content: center;
@@ -41,7 +46,7 @@ body {
 }
 
 /* logo container */
-.logo-container{
+.logo-container {
   position: fixed;
   top: 40%;
   left: 0%;
@@ -53,18 +58,24 @@ body {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.648) ;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.648);
+  cursor: pointer;
 }
 
-.goToTop{
+.logo-container img:hover{
+  transform: scale(1.1) translate(5px)
+}
+
+.goToTop {
   position: fixed;
   bottom: 100px;
   right: 50px;
   color: blue;
   font-size: 60px;
-  font-weight:bolder;
+  font-weight: bolder;
   border-radius: 50%;
 }
+
 .typed-effect {
   font-size: 24px;
   font-weight: bold;
@@ -74,9 +85,8 @@ body {
   width: 0;
   color: transparent;
   background: linear-gradient(to right, #e6dcda, #179b06);
-  -webkit-background-clip: text;
   background-clip: text;
-  animation: typing 3s steps(30, end) forwards;
+  animation: typing 4s forwards;
 }
 
 /* Typing Animation */
@@ -95,6 +105,10 @@ body {
   color: white !important;
   font-size: small !important;
   text-decoration-color: antiquewhite;
+}
+
+.nav-link:hover{
+  transform: scale(1.2) ;
 }
 
 .skill-item {

@@ -17,11 +17,12 @@ import { LiaHandPointer } from "react-icons/lia";
 import Work from "./Work";
 import ResumeModal from "./ResumeModal";
 import TechStackTree from "./TechStackTree";
+import ContactMeModal from "./ContactMeModal";
 
-const Home = () => {
+const Home = ({ ContactModalShow, setContactModalShow }) => {
   const [modalShow, setModalShow] = React.useState(false);
   return (
-    <Container className="container">
+    <Container className="container  ">
       <Row className="mt-5">
         <Col className="d-flex-c-a">
           <img src="/profilecartoon.png" alt="" />
@@ -45,7 +46,12 @@ const Home = () => {
           </div>
           <div className="d-flex w-100  gap-2">
             <a href="#contact-me">
-              <Button variant="dark border-light">Contact me</Button>
+              <Button
+                variant="dark border-light"
+                onClick={() => setContactModalShow(true)}
+              >
+                Contact me
+              </Button>
             </a>
             <Button
               variant="dark border-light"
@@ -56,13 +62,19 @@ const Home = () => {
           </div>
         </Col>
       </Row>
-
+      {/* modals 
+    
+    */}
       <ResumeModal show={modalShow} onHide={() => setModalShow(false)} />
+      <ContactMeModal
+        show={ContactModalShow}
+        onHide={() => setContactModalShow(false)}
+      />
 
       <Work />
 
       <section id="skills">
-        <div className="skills text-center">
+        <div className="skills text-center mt-5">
           <h3>My Tech Stacks</h3>
           <div className="d-flex justify-content-around pt-5 flex-wrap gap-3">
             <div className="skill-item">
@@ -105,7 +117,9 @@ const Home = () => {
         </div>
       </section>
 
-    <TechStackTree />
+      <div className="text-center">
+        <TechStackTree />
+      </div>
 
       <section className=" my-5 p-md-5" id="about-me">
         <h2 className="text-center mb-5">
@@ -140,9 +154,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div
-            className="text-center fade-in-right"
-          >
+          <div className="text-center fade-in-right">
             <div
               className="border border-3 overflow-hidden rounded-circle "
               style={{ height: "300px", width: "300px" }}
@@ -153,7 +165,9 @@ const Home = () => {
                 className="img-fluid p-3"
               />
             </div>
+            <br />
             <h5>Ishwor Karki</h5>
+            Full stack developer
           </div>
         </div>
       </section>

@@ -4,7 +4,7 @@ import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import { HashLink as Link } from "react-router-hash-link";
 
-const Footer = () => {
+const Footer = ({ setContactModalShow }) => {
   return (
     <>
       <div className="bg-black p-5  text-center">
@@ -20,7 +20,7 @@ const Footer = () => {
               Skills
             </Link>
 
-            <Link className="nav-link">Contact</Link>
+            <Link className="nav-link" onClick={()=>setContactModalShow(true)}>Contact</Link>
 
             <Link className="nav-link" to="/#about-me">
               About

@@ -5,7 +5,9 @@ import Header from "./components/Header.jsx";
 import Work from "./components/Work.jsx";
 import Home from "./components/Home.jsx";
 import { GoChevronUp } from "react-icons/go";
+import React from "react";
 function App() {
+   const [ContactModalShow, setContactModalShow] = React.useState(false);
   return (
     <>
       <div className="wrapper bg-black">
@@ -31,23 +33,23 @@ function App() {
                 )
               }
             />
-            <a href="#contact-me">
+            <a href="mailto:ishworkarkij11@gmail.com">
               <img src="/email.png" alt="email" />
             </a>
           </div>
 
           <div className="goToTop">
-            <a href="#navbar" >
+            <a href="#navbar">
               {" "}
               <GoChevronUp />
             </a>
           </div>
           <Header />
           <Routes>
-            <Route path="*" element={<Home />} />
+            <Route path="*" element={<Home ContactModalShow={ContactModalShow} setContactModalShow={setContactModalShow}/>} />
             <Route path="/work" element={<Work />} />
           </Routes>
-          <Footer />
+          <Footer setContactModalShow={setContactModalShow}/>
         </div>
       </div>
     </>

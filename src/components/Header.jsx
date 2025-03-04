@@ -10,7 +10,7 @@ const Header = () => {
       <Navbar
         expand="lg"
         className="bg-body-tertiary"
-        style={{ backgroundColor: "inherit !important" }} id="navbar"
+        style={{ backgroundColor: "inherit !important" }} id="navbar" 
       >
         <Container>
           <Navbar.Brand href="/" className="d-flex align-items-center gap-3">
