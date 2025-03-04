@@ -3,7 +3,7 @@ import "./App.css";
 import Footer from "./components/Footer.jsx";
 import Header from "./components/Header.jsx";
 import Work from "./components/Work.jsx";
-import Home from "./components/home.jsx";
+import Home from "./components/Home.jsx";
 import { GoChevronUp } from "react-icons/go";
 function App() {
   return (
