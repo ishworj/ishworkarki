@@ -2,8 +2,11 @@ import { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
+import axios from "axios";
+import { toast, Bounce } from "react-toastify";
 
 const ContactMeModal = (props) => {
+  const sendUrl = import.meta.env.VITE_URL + "/api/mail-to";
   const [formData, setFormData] = useState({
     email: "",
     subject: "",
@@ -12,7 +15,7 @@ const ContactMeModal = (props) => {
 
   // Load data from localStorage on component mount
   useEffect(() => {
-    const storedData = JSON.parse(localStorage.getItem("formData"));
+    const storedData = JSON.parse(localStorage.getItem("formData") || "{}");
     if (storedData) {
       setFormData(storedData);
     }
@@ -25,14 +28,40 @@ const ContactMeModal = (props) => {
     localStorage.setItem("formData", JSON.stringify(updatedForm));
   };
 
-  const handleOnSubmit = (e) => {
+  const handleOnSubmit = async (e) => {
     e.preventDefault();
-    alert("Form submitted!");
-    // You can handle form submission logic here
-
-    localStorage.removeItem("formData")
-    setFormData({})
-    props.onHide()
+    try {
+      const response = await axios.post(sendUrl, formData);
+      if (response.data?.success) {
+        toast.success(response.data.message, {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          transition: Bounce,
+        });
+      }
+      localStorage.removeItem("formData");
+      setFormData({ email: "", subject: "", message: "" });
+      props.onHide();
+    } catch (error) {
+      !error?.response?.data?.success &&
+        toast.error(error?.response?.data?.message || "Error sending mail", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          transition: Bounce,
+        });
+    }
   };
 
   return (

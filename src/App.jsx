@@ -6,10 +6,12 @@ import Work from "./components/Work.jsx";
 import Home from "./components/Home.jsx";
 import { GoChevronUp } from "react-icons/go";
 import React from "react";
+import { ToastContainer, toast } from "react-toastify";
 function App() {
    const [ContactModalShow, setContactModalShow] = React.useState(false);
   return (
     <>
+      <ToastContainer />
       <div className="wrapper bg-black">
         <div className="firstLook d-flex-c-a">
           <div>Welcome to IshworKarki.com</div>
@@ -46,10 +48,18 @@ function App() {
           </div>
           <Header />
           <Routes>
-            <Route path="*" element={<Home ContactModalShow={ContactModalShow} setContactModalShow={setContactModalShow}/>} />
+            <Route
+              path="*"
+              element={
+                <Home
+                  ContactModalShow={ContactModalShow}
+                  setContactModalShow={setContactModalShow}
+                />
+              }
+            />
             <Route path="/work" element={<Work />} />
           </Routes>
-          <Footer setContactModalShow={setContactModalShow}/>
+          <Footer setContactModalShow={setContactModalShow} />
         </div>
       </div>
     </>
