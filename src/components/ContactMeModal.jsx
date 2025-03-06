@@ -31,7 +31,14 @@ const ContactMeModal = (props) => {
   const handleOnSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(sendUrl, formData);
+
+
+      const pendingRequest = axios.post(sendUrl, formData);
+     toast.promise(pendingRequest,{
+      pending:"please wait ..."
+     })
+
+      const response = await pendingRequest;
       if (response.data?.success) {
         toast.success(response.data.message, {
           position: "top-right",

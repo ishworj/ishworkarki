@@ -117,3 +117,10 @@ body {
 .skill-item p {
   padding-top: 5px;
 }
+
+
+.project-card{
+  box-shadow: 5px 5px 10px  rgba(255, 255, 255, 0.567);
+  margin: 2rem;
+
+}

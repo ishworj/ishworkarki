@@ -1,56 +1,104 @@
 import React from "react";
 import Container from "react-bootstrap/esm/Container";
 import { CiLocationArrow1 } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
+import { MdComputer } from "react-icons/md";
 
 const Work = () => {
   return (
-    <Container className="container p-md-5 mt-5 d-flex flex-column justify-content-center">
-      <h1 className="text-center">Featured projects</h1>
+    <Container className="container p-md-5 mt-5  ">
+      <h1>My projects</h1>
 
-      <div className="w-50 mt-5 pt-5">
-        <a className="text-white text-decoration-none" href="">
-          <h6
-            onClick={() => {
-              window.open(
-                "https://finance-tracker-jet-rho.vercel.app/",
-                "_blank"
-              );
-            }}
-          >
-            FinanceTracker.com <CiLocationArrow1 />
-          </h6>
-        </a>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod placeat
-          hic fugit quis. Ullam deserunt sequi neque ad fuga, blanditiis quos
-          est earum atque dolorem! Tempore aspernatur quos aliquam eveniet
-          quaerat accusantiumt.
-        </p>
+      <div className="project-card d-flex  ">
+        <div className="w-50">
+          <img src="ftimg.png" alt="" className="img-fluid" />
+
+          <h5 className="pt-2 text-center">
+            <FaGithub /> <MdComputer />
+          </h5>
+        </div>
+
+        <div className="w-50 p-3 bg-success text-dark fw-bold d-flex align-items-center">
+          <div>
+            <h4 className="text-white text-center pb-2">Features</h4>
+            <ul>
+              <li>it effect s the management easilh whicn is good gor the </li>
+              <li>
+                asdf Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cum, recusandae?
+              </li>
+              <li>
+                {" "}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente similique harum dolorum nemo molestiae.
+              </li>
+            </ul>
+            <p className="text-center">
+              TechStack : React.JS , Node.js , Bootstrap{" "}
+            </p>
+          </div>
+        </div>
       </div>
+      <div className="project-card d-flex  ">
+        <div className="w-50">
+          <img src="ftimg.png" alt="" className="img-fluid" />
 
-      <div className="">
-        <video height={500} width={1000} autoPlay loop muted>
-          <source src="financeTracker.mp4" type="video/mp4" allowFullScreen />
-        </video>
+          <h5 className="pt-2 text-center">
+            <FaGithub /> <MdComputer />
+          </h5>
+        </div>
+
+        <div className="w-50 p-3 bg-success text-dark fw-bold d-flex align-items-center">
+          <div>
+            <h4 className="text-white text-center pb-2">Features</h4>
+            <ul>
+              <li>it effect s the management easilh whicn is good gor the </li>
+              <li>
+                asdf Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cum, recusandae?
+              </li>
+              <li>
+                {" "}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente similique harum dolorum nemo molestiae.
+              </li>
+            </ul>
+            <p className="text-center">
+              TechStack : React.JS , Node.js , Bootstrap{" "}
+            </p>
+          </div>
+        </div>
       </div>
+      <div className="project-card d-flex  ">
+        <div className="w-50">
+          <img src="ftimg.png" alt="" className="img-fluid" />
 
-      <div className="w-50 mt-5 pt-5">
-        <a className="text-white text-decoration-none" href="">
-          <h6>
-            FinanceTracker.com <CiLocationArrow1 />
-          </h6>
-        </a>
-        <p className="">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod placeat
-          hic fugit quis. Ullam deserunt sequi neque ad fuga, blanditiis quos
-          est earum atque dolorem! Tempore aspernatur quos aliquam eveniet
-          quaerat accusantiumt.
-        </p>
+          <h5 className="pt-2 text-center">
+            <FaGithub /> <MdComputer />
+          </h5>
+        </div>
+
+        <div className="w-50 p-3 bg-success text-dark fw-bold d-flex align-items-center">
+          <div>
+            <h4 className="text-white text-center pb-2">Features</h4>
+            <ul>
+              <li>it effect s the management easilh whicn is good gor the </li>
+              <li>
+                asdf Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cum, recusandae?
+              </li>
+              <li>
+                {" "}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente similique harum dolorum nemo molestiae.
+              </li>
+            </ul>
+            <p className="text-center">
+              TechStack : React.JS , Node.js , Bootstrap{" "}
+            </p>
+          </div>
+        </div>
       </div>
-
-      <video autoPlay loop muted>
-        <source src="financeTracker.mp4" type="video/mp4" allowFullScreen />
-      </video>
     </Container>
   );
 };

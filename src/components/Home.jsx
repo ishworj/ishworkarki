@@ -14,15 +14,15 @@ import {
 } from "react-icons/fa";
 import { SiMongodb, SiRedux } from "react-icons/si";
 import { LiaHandPointer } from "react-icons/lia";
-import Work from "./Work";
 import ResumeModal from "./ResumeModal";
-import TechStackTree from "./TechStackTree";
 import ContactMeModal from "./ContactMeModal";
+import { CiLocationArrow1 } from "react-icons/ci";
+import SkillTree from "./SkillTree";
 
 const Home = ({ ContactModalShow, setContactModalShow }) => {
   const [modalShow, setModalShow] = React.useState(false);
   return (
-    <Container className="container  ">
+    <Container className="container">
       <Row className="mt-5">
         <Col className="d-flex-c-a">
           <img src="/profilecartoon.png" alt="" />
@@ -71,7 +71,50 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
         onHide={() => setContactModalShow(false)}
       />
 
-      <Work />
+      <h1 className="text-center">Featured projects</h1>
+
+      <div className="w-50 mt-5 pt-5">
+        <a className="text-white text-decoration-none" href="">
+          <h6
+            onClick={() => {
+              window.open(
+                "https://finance-tracker-jet-rho.vercel.app/",
+                "_blank"
+              );
+            }}
+          >
+            FinanceTracker.com <CiLocationArrow1 />
+          </h6>
+        </a>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod placeat
+          hic fugit quis. Ullam deserunt sequi neque ad fuga, blanditiis quos
+          est earum atque dolorem! Tempore aspernatur quos aliquam eveniet
+          quaerat accusantiumt.
+        </p>
+      </div>
+
+      <video autoPlay loop muted className="h-100 w-100">
+        <source src="financeTracker.mp4" type="video/mp4" />
+      </video>
+
+      <div className="w-50 mt-5 pt-5">
+        <a className="text-white text-decoration-none" href="">
+          <h6>
+            FinanceTracker.com <CiLocationArrow1 />
+          </h6>
+        </a>
+        <p className="">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod placeat
+          hic fugit quis. Ullam deserunt sequi neque ad fuga, blanditiis quos
+          est earum atque dolorem! Tempore aspernatur quos aliquam eveniet
+          quaerat accusantiumt.
+        </p>
+      </div>
+
+      <video autoPlay loop muted className="h-100 w-100">
+        <source src="financeTracker.mp4" type="video/mp4" />
+      </video>
 
       <section id="skills">
         <div className="skills text-center mt-5">
@@ -118,7 +161,7 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
       </section>
 
       <div className="text-center">
-        <TechStackTree />
+        <SkillTree />
       </div>
 
       <section className=" my-5 p-md-5" id="about-me">
