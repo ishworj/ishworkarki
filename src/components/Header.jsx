@@ -6,12 +6,12 @@ import { GiSharpCrown } from "react-icons/gi";
 
 const Header = () => {
   return (
-    <div>
-      <Navbar
-        expand="lg"
-        className="bg-body-tertiary"
-        style={{ backgroundColor: "inherit !important" }} id="navbar" 
-      >
+    <div
+      className="position-fixed w-100"
+      style={{ top: 0, left: 0, zIndex: 10 }}
+      id="navbar"
+    >
+      <Navbar expand="lg" className="bg-black">
         <Container>
           <Navbar.Brand href="/" className="d-flex align-items-center gap-3">
             <div className="text-success fs-1 d-flex">

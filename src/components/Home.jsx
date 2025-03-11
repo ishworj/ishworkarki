@@ -83,14 +83,16 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
               );
             }}
           >
-            FinanceTracker.com <CiLocationArrow1 />
+            FinanceTracker <CiLocationArrow1 />
           </h6>
         </a>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod placeat
-          hic fugit quis. Ullam deserunt sequi neque ad fuga, blanditiis quos
-          est earum atque dolorem! Tempore aspernatur quos aliquam eveniet
-          quaerat accusantiumt.
+          The Finance Tracker App is a web-based application designed to help
+          users manage their finances efficiently. It enables users to track
+          income and expenses, view real-time balance updates, and analyze
+          spending habits through interactive reports. Additionally, the app
+          integrates AI to provide personalized financial insights and real-time
+          suggestions based on spending patterns.
         </p>
       </div>
 
@@ -101,19 +103,20 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
       <div className="w-50 mt-5 pt-5">
         <a className="text-white text-decoration-none" href="">
           <h6>
-            FinanceTracker.com <CiLocationArrow1 />
+            Readease <CiLocationArrow1 />
           </h6>
         </a>
         <p className="">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod placeat
-          hic fugit quis. Ullam deserunt sequi neque ad fuga, blanditiis quos
-          est earum atque dolorem! Tempore aspernatur quos aliquam eveniet
-          quaerat accusantiumt.
+          The Library Management System (LMS)  ie ReadEase is a web application designed to
+          facilitate the management of books, users, and borrowing history in a
+          library. It allows two types of users: Admin (who can manage books,
+          users, and reports) and Members (who can borrow books, return them,
+          rate them, and view their history).
         </p>
       </div>
 
       <video autoPlay loop muted className="h-100 w-100">
-        <source src="financeTracker.mp4" type="video/mp4" />
+        <source src="lms.mp4" type="video/mp4" />
       </video>
 
       <section id="skills">
@@ -160,9 +163,6 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
         </div>
       </section>
 
-      <div className="text-center">
-        <SkillTree />
-      </div>
 
       <section className=" my-5 p-md-5" id="about-me">
         <h2 className="text-center mb-5">
@@ -191,9 +191,9 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
             <div>
               <div className="fw-bold mb-2">Interests:</div>
               <div className="d-flex flex-wrap gap-3">
-                <span className="badge bg-primary">Coding</span>
-                <span className="badge bg-info">Music/football</span>
-                <span className="badge bg-success">Learning</span>
+                <span className="badge bg-primary p-2">Coding</span>
+                <span className="badge bg-info p-2">Music/football</span>
+                <span className="badge bg-success p-2">Learning</span>
               </div>
             </div>
           </div>

@@ -5,17 +5,41 @@ import Header from "./components/Header.jsx";
 import Work from "./components/Work.jsx";
 import Home from "./components/Home.jsx";
 import { GoChevronUp } from "react-icons/go";
-import React from "react";
+import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 function App() {
    const [ContactModalShow, setContactModalShow] = React.useState(false);
+
+    const [showGoTop, setShowGoTop] = useState(false);
+
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowGoTop(true);
+      } else {
+        setShowGoTop(false);
+      }
+    };
+
+    // Add scroll event listener
+    React.useEffect(() => {
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
   return (
     <>
-      <ToastContainer />
-      <div className="wrapper bg-black">
+      <div className="wrapper bg-black" style={{ paddingTop: "70px" }}>
         <div className="firstLook d-flex-c-a">
           <div>Welcome to IshworKarki.com</div>
         </div>
+
         <div className="container bg-black text-light">
           <div className="d-flex gap-3 flex-column logo-container ">
             <img
@@ -39,13 +63,14 @@ function App() {
               <img src="/email.png" alt="email" />
             </a>
           </div>
-
+          
+          {showGoTop &&
           <div className="goToTop">
-            <a href="#navbar">
+            <a onClick={scrollToTop}>
               {" "}
               <GoChevronUp />
             </a>
-          </div>
+          </div>}
           <Header />
           <Routes>
             <Route
@@ -60,6 +85,7 @@ function App() {
             <Route path="/work" element={<Work />} />
           </Routes>
           <Footer setContactModalShow={setContactModalShow} />
+          <ToastContainer />
         </div>
       </div>
     </>
