@@ -20,7 +20,6 @@ const Work = () => {
 
         <div className="w-50 p-3 bg-success text-dark fw-bold d-flex align-items-center">
           <div>
-
             <h4 className="text-white text-center pb-2">FinanceTracker</h4>
             <ul>
               <li>
@@ -45,7 +44,7 @@ const Work = () => {
       </div>
       <div className="project-card d-flex  ">
         <div className="w-50 ">
-          <img src="ReadEase.png" alt="" className="img-fluid p-3"  />
+          <img src="ReadEase.png" alt="" className="img-fluid p-3" />
 
           <h5 className="pt-2 text-center">
             <FaGithub /> <MdComputer />
@@ -54,7 +53,9 @@ const Work = () => {
 
         <div className="w-50 p-3 bg-success text-dark fw-bold d-flex align-items-center">
           <div>
-            <h4 className="text-white text-center pb-2">ReadEase ie library managment system</h4>
+            <h4 className="text-white text-center pb-2">
+              ReadEase ie library managment system
+            </h4>
             <ul>
               <li>User Authentication with JWT tokens for secure login.</li>
               <li>
@@ -90,19 +91,24 @@ const Work = () => {
           <div>
             <h4 className="text-white text-center pb-2">Features</h4>
             <ul>
-              <li>it effect s the management easilh whicn is good gor the </li>
               <li>
-                asdf Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Cum, recusandae?
+                Real-Time Task Movement: Organize tasks seamlessly by moving
+                them through different stages as you work, ensuring fluid
+                management of priorities.
               </li>
               <li>
-                {" "}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente similique harum dolorum nemo molestiae.
+                Dual Purpose: Acts as both a powerful task manager and a
+                note-taking application, giving you the flexibility to track
+                to-dos and jot down quick thoughts in one place.
+              </li>
+              <li>
+                Enhanced Management Efficiency: Boost your productivity by
+                offering real-time task updates, ensuring nothing slips through
+                the cracks.
               </li>
             </ul>
             <p className="text-center">
-              TechStack : React.JS , Node.js , Bootstrap{" "}
+              <strong>Tech Stack:</strong> React.js, Node.js, Bootstrap
             </p>
           </div>
         </div>
