@@ -62,8 +62,8 @@ body {
   cursor: pointer;
 }
 
-.logo-container img:hover{
-  transform: scale(1.1) translate(5px)
+.logo-container img:hover {
+  transform: scale(1.1) translate(5px);
 }
 
 .goToTop {
@@ -74,6 +74,16 @@ body {
   font-size: 60px;
   font-weight: bolder;
   border-radius: 50%;
+}
+
+@media (max-width: 576px) {
+  .goToTop {
+    right: 5px;
+  }
+  .logo-container img {
+    height: 30px;
+    width: 30px;
+  }
 }
 
 .typed-effect {
@@ -107,8 +117,8 @@ body {
   text-decoration-color: antiquewhite;
 }
 
-.nav-link:hover{
-  transform: scale(1.2) ;
+.nav-link:hover {
+  transform: scale(1.2);
 }
 
 .skill-item {
@@ -118,9 +128,7 @@ body {
   padding-top: 5px;
 }
 
-
-.project-card{
-  box-shadow: 5px 5px 10px  rgba(255, 255, 255, 0.567);
+.project-card {
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.567);
   margin: 2rem;
-
 }

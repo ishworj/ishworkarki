@@ -23,13 +23,16 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
   const [modalShow, setModalShow] = React.useState(false);
   return (
     <Container className="overflow-hidden">
-      <Row className="mt-5">
+      <Row className="mt-md-5">
         <Col className="d-flex-c-a">
           <img src="/profilecartoon.png" alt="" />
         </Col>
+        {/* //TODO text cutt on ends */}
         <Col className="d-flex-c-a flex-column">
-          <div className=" text-white">
-            <h4 className="typed-effect">Your Next Full-Stack Web Developer</h4>
+          <div className=" text-white  ">
+            <h4 className="typed-effect ">
+              Your Next Full-Stack Web Developer
+            </h4>
             <h5> Ready to Drive Results:</h5>
             <p>
               With expertise in{" "}

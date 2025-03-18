@@ -6,19 +6,21 @@ import { MdComputer } from "react-icons/md";
 
 const Work = () => {
   return (
-    <Container className=" p-md-5 mt-5  ">
+    <Container className="p-md-5 mt-5">
       <h1>My projects</h1>
 
-      <div className="project-card d-flex flex-column flex-sm-row ">
-        <div className="w-md-50">
+      <div className="project-card d-flex flex-column flex-sm-row">
+        <div className="w-md-50" style={{ flexBasis: "70%" }}>
           <img src="ftimg.png" alt="" className="img-fluid" />
-
           <h5 className="pt-2 text-center">
             <FaGithub /> <MdComputer />
           </h5>
         </div>
 
-        <div className="w-md-50 p-3 bg-success text-dark fw-bold d-flex align-items-center">
+        <div
+          className="w-md-50 p-3 bg-success text-dark fw-bold d-flex align-items-center"
+          style={{ flexBasis: "30%" }}
+        >
           <div>
             <h4 className="text-white text-center pb-2">FinanceTracker</h4>
             <ul>
@@ -42,19 +44,22 @@ const Work = () => {
           </div>
         </div>
       </div>
-      <div className="project-card d-flex flex-column flex-sm-row  ">
-        <div className="w-md-50 ">
-          <img src="ReadEase.png" alt="" className="img-fluid p-3" />
 
+      <div className="project-card d-flex flex-column flex-sm-row">
+        <div className="w-md-50" style={{ flexBasis: "70%" }}>
+          <img src="ReadEase.png" alt="" className="img-fluid p-3" />
           <h5 className="pt-2 text-center">
             <FaGithub /> <MdComputer />
           </h5>
         </div>
 
-        <div className="w-md-50 p-3 bg-success text-dark fw-bold d-flex align-items-center">
+        <div
+          className="w-md-50 p-3 bg-success text-dark fw-bold d-flex align-items-center"
+          style={{ flexBasis: "30%" }}
+        >
           <div>
             <h4 className="text-white text-center pb-2">
-              ReadEase ie library managment system
+              ReadEase - Library Management System
             </h4>
             <ul>
               <li>User Authentication with JWT tokens for secure login.</li>
@@ -73,38 +78,40 @@ const Work = () => {
               <li>Reports and Analytics for Admins to track library usage.</li>
             </ul>
             <p className="text-center">
-              TechStack : React.JS, Node.js, MongoDB, Express.js, Vercel, Render
+              Tech Stack: React.JS, Node.js, MongoDB, Express.js, Vercel, Render
             </p>
           </div>
         </div>
       </div>
-      <div className="project-card d-flex  flex-column flex-sm-row ">
-        <div className="w-md-50 ">
-          <img src="ntdl.png" alt="" className="img-fluid p-3" />
 
+      <div className="project-card d-flex flex-column flex-sm-row">
+        <div className="w-md-50" style={{ flexBasis: "70%" }}>
+          <img src="ntdl.png" alt="" className="img-fluid p-3" />
           <h5 className="pt-2 text-center">
             <FaGithub /> <MdComputer />
           </h5>
         </div>
 
-        <div className="w-md-50 p-3 bg-success text-dark fw-bold d-flex align-items-center">
+        <div
+          className="w-md-50 p-3 bg-success text-dark fw-bold d-flex align-items-center"
+          style={{ flexBasis: "30%" }}
+        >
           <div>
-            <h4 className="text-white text-center pb-2">Features</h4>
+            <h4 className="text-white text-center pb-2">
+              Task & Notes Manager
+            </h4>
             <ul>
               <li>
                 Real-Time Task Movement: Organize tasks seamlessly by moving
-                them through different stages as you work, ensuring fluid
-                management of priorities.
+                them through different stages.
               </li>
               <li>
                 Dual Purpose: Acts as both a powerful task manager and a
-                note-taking application, giving you the flexibility to track
-                to-dos and jot down quick thoughts in one place.
+                note-taking application.
               </li>
               <li>
-                Enhanced Management Efficiency: Boost your productivity by
-                offering real-time task updates, ensuring nothing slips through
-                the cracks.
+                Enhanced Management Efficiency: Boosts productivity with
+                real-time task updates.
               </li>
             </ul>
             <p className="text-center">

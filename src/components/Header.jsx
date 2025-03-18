@@ -21,9 +21,9 @@ const Header = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto ">
+            <Nav className="ms-auto text-end pe-2 ">
               <Link className="nav-link" to="/#about-me">
-                About me
+                About me 
               </Link>
               <Link className="nav-link" to="/work">
                 Work
