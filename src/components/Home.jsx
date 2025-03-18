@@ -22,7 +22,7 @@ import SkillTree from "./SkillTree";
 const Home = ({ ContactModalShow, setContactModalShow }) => {
   const [modalShow, setModalShow] = React.useState(false);
   return (
-    <Container className="container">
+    <Container className="overflow-hidden">
       <Row className="mt-5">
         <Col className="d-flex-c-a">
           <img src="/profilecartoon.png" alt="" />
@@ -44,20 +44,18 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
               help dirive your projects forward and add value form day one.
             </p>
           </div>
-          <div className="d-flex w-100  gap-2">
-            <a href="#contact-me">
-              <Button
-                variant="dark border-light"
-                onClick={() => setContactModalShow(true)}
-              >
-                Contact me
-              </Button>
-            </a>
+          <div className="d-flex justify-content-center  justify-content-md-start   w-100 gap-2">
+            <Button
+              variant="dark border-light"
+              onClick={() => setContactModalShow(true)}
+            >
+              Contact me
+            </Button>
             <Button
               variant="dark border-light"
               onClick={() => setModalShow(true)}
             >
-              See Resume <LiaHandPointer />{" "}
+              See Resume <LiaHandPointer />
             </Button>
           </div>
         </Col>
@@ -71,9 +69,9 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
         onHide={() => setContactModalShow(false)}
       />
 
-      <h1 className="text-center">Featured projects</h1>
+      <h1 className="text-center pt-5 pt-sm-0">Featured projects</h1>
 
-      <div className="w-50 mt-5 pt-5">
+      <div className="w-md-50 mt-5 pt-5">
         <a className="text-white text-decoration-none" href="">
           <h6
             onClick={() => {
@@ -100,18 +98,18 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
         <source src="financeTracker.mp4" type="video/mp4" />
       </video>
 
-      <div className="w-50 mt-5 pt-5">
+      <div className="w-md-50 mt-5 pt-5">
         <a className="text-white text-decoration-none" href="">
           <h6>
             Readease <CiLocationArrow1 />
           </h6>
         </a>
         <p className="">
-          The Library Management System (LMS)  ie ReadEase is a web application designed to
-          facilitate the management of books, users, and borrowing history in a
-          library. It allows two types of users: Admin (who can manage books,
-          users, and reports) and Members (who can borrow books, return them,
-          rate them, and view their history).
+          The Library Management System (LMS) ie ReadEase is a web application
+          designed to facilitate the management of books, users, and borrowing
+          history in a library. It allows two types of users: Admin (who can
+          manage books, users, and reports) and Members (who can borrow books,
+          return them, rate them, and view their history).
         </p>
       </div>
 
@@ -163,13 +161,12 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
         </div>
       </section>
 
-
       <section className=" my-5 p-md-5" id="about-me">
         <h2 className="text-center mb-5">
           <span>About Me</span>
         </h2>
 
-        <div className="container d-flex gap-5 flex-md-row  flex-sm-column-reverse align-items-center ">
+        <div className="container d-flex gap-5  flex-column-reverse flex-md-row  align-items-center ">
           <div className="my-bio ms-md-5 ">
             <p>
               I am a Full-Stack Web Developer skilled in React.js, Node.js,
@@ -197,7 +194,8 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
               </div>
             </div>
           </div>
-          <div className="text-center fade-in-right">
+
+          <div clas sName="text-center fade-in-right">
             <div
               className="border border-3 overflow-hidden rounded-circle "
               style={{ height: "300px", width: "300px" }}
@@ -209,8 +207,8 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
               />
             </div>
             <br />
-            <h5>Ishwor Karki</h5>
-            Full stack developer
+            <h5 className="text-center">Ishwor Karki</h5>
+            <p className="text-center">Full stack developer</p>
           </div>
         </div>
       </section>

@@ -6,11 +6,11 @@ import { MdComputer } from "react-icons/md";
 
 const Work = () => {
   return (
-    <Container className="container p-md-5 mt-5  ">
+    <Container className=" p-md-5 mt-5  ">
       <h1>My projects</h1>
 
-      <div className="project-card d-flex  ">
-        <div className="w-50">
+      <div className="project-card d-flex flex-column flex-sm-row ">
+        <div className="w-md-50">
           <img src="ftimg.png" alt="" className="img-fluid" />
 
           <h5 className="pt-2 text-center">
@@ -18,7 +18,7 @@ const Work = () => {
           </h5>
         </div>
 
-        <div className="w-50 p-3 bg-success text-dark fw-bold d-flex align-items-center">
+        <div className="w-md-50 p-3 bg-success text-dark fw-bold d-flex align-items-center">
           <div>
             <h4 className="text-white text-center pb-2">FinanceTracker</h4>
             <ul>
@@ -42,8 +42,8 @@ const Work = () => {
           </div>
         </div>
       </div>
-      <div className="project-card d-flex  ">
-        <div className="w-50 ">
+      <div className="project-card d-flex flex-column flex-sm-row  ">
+        <div className="w-md-50 ">
           <img src="ReadEase.png" alt="" className="img-fluid p-3" />
 
           <h5 className="pt-2 text-center">
@@ -51,7 +51,7 @@ const Work = () => {
           </h5>
         </div>
 
-        <div className="w-50 p-3 bg-success text-dark fw-bold d-flex align-items-center">
+        <div className="w-md-50 p-3 bg-success text-dark fw-bold d-flex align-items-center">
           <div>
             <h4 className="text-white text-center pb-2">
               ReadEase ie library managment system
@@ -78,8 +78,8 @@ const Work = () => {
           </div>
         </div>
       </div>
-      <div className="project-card d-flex  ">
-        <div className="w-50 ">
+      <div className="project-card d-flex  flex-column flex-sm-row ">
+        <div className="w-md-50 ">
           <img src="ntdl.png" alt="" className="img-fluid p-3" />
 
           <h5 className="pt-2 text-center">
@@ -87,7 +87,7 @@ const Work = () => {
           </h5>
         </div>
 
-        <div className="w-50 p-3 bg-success text-dark fw-bold d-flex align-items-center">
+        <div className="w-md-50 p-3 bg-success text-dark fw-bold d-flex align-items-center">
           <div>
             <h4 className="text-white text-center pb-2">Features</h4>
             <ul>
