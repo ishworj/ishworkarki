@@ -172,20 +172,19 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
         <div className="container d-flex gap-5  flex-column-reverse flex-md-row  align-items-center ">
           <div className="my-bio ms-md-5 ">
             <p>
-              I am a Full-Stack Web Developer skilled in React.js, Node.js,
-              MongoDB, and JavaScript, with a passion for building scalable,
-              high-performance applications. From designing intuitive front-end
-              interfaces to developing secure and efficient back-end systems, I
-              enjoy working across the entire software development lifecycle
-              (SDLC).
+              Full-Stack Web Developer with hands-on experience in designing,
+              developing, and deploying modern web applications using
+              technologies such as React.js, Node.js, Express.js, MongoDB,
+              JavaScript (ES6), HTML5, and CSS3. Skilled in building responsive
+              user interfaces, creating efficient RESTful APIs, and managing
+              databases to deliver scalable and high-performing solutions.
             </p>
 
             <p>
-              Eager to contribute to a dynamic team, I am open to any
-              entry-level opportunities where I can contribute in designing,
-              developing, and optimizing web applications. With a strong
-              problem-solving mindset and adaptability, I am ready to make an
-              impact and grow alongside innovative projects. Let’s connect!
+              Strong foundation in software engineering principles, database
+              design, cloud computing, and Agile workflows. Known for a
+              collaborative mindset, clear communication, and the ability to
+              adapt quickly in fast-paced environments.
             </p>
 
             <div>

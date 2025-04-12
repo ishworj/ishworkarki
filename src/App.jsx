@@ -16,7 +16,7 @@ function App() {
       if (window.scrollY > 200) {
         setShowGoTop(true);
       } else {
-        setShowGoTop(false);
+        setShowGoTop(false);s
       }
     };
 
