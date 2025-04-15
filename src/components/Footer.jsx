@@ -56,9 +56,9 @@ const Footer = ({ setContactModalShow }) => {
         </div>
       </div>
       <div className="text-center">
-        <p className="pb-2">
+        <div className="pb-2">
           &copy; 2025 ishworkarki.com . All rights reserved.
-        </p>
+        </div>
       </div>
     </>
   );

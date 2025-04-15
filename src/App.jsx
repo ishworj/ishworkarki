@@ -7,6 +7,7 @@ import Home from "./components/Home.jsx";
 import { GoChevronUp } from "react-icons/go";
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
+import MyBlogs from "./components/MyBlogs.jsx";
 function App() {
    const [ContactModalShow, setContactModalShow] = React.useState(false);
 
@@ -63,14 +64,15 @@ function App() {
               <img src="/email.png" alt="email" />
             </a>
           </div>
-          
-          {showGoTop &&
-          <div className="goToTop">
-            <a onClick={scrollToTop}>
-              {" "}
-              <GoChevronUp />
-            </a>
-          </div>}
+
+          {showGoTop && (
+            <div className="goToTop">
+              <a onClick={scrollToTop}>
+                {" "}
+                <GoChevronUp />
+              </a>
+            </div>
+          )}
           <Header />
           <Routes>
             <Route
@@ -83,6 +85,7 @@ function App() {
               }
             />
             <Route path="/work" element={<Work />} />
+            <Route path="/blogs" element={<MyBlogs />} />
           </Routes>
           <Footer setContactModalShow={setContactModalShow} />
           <ToastContainer />

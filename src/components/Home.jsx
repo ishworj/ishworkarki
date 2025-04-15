@@ -35,16 +35,17 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
             </h4>
             <h5> Ready to Drive Results:</h5>
             <p>
-              With expertise in{" "}
-              <b style={{ color: "#179b06" }}>
-                React.js, Node.js, MongoDb, and JavaScript,
-              </b>{" "}
-              I bring the ability to build efficent, scalable applicaitons that
-              align with your company's goals. I'm{" "}
-              <b>solutions-oriented developer</b> who can quickly adapt and
-              contribute to your team, helping you deliver high-quality,
-              user-friendly products. Let's connect and i'll show you how i can
-              help dirive your projects forward and add value form day one.
+              Full-Stack Web Developer with hands-on experience in designing,
+              developing, and deploying modern web applications using
+              technologies such as
+              <strong className="text-success">
+                {" "}
+                React.js, Node.js, Express.js, MongoDB, JavaScript (ES6), HTML5,
+                and CSS3
+              </strong>
+              . Skilled in building responsive user interfaces, creating
+              efficient RESTful APIs, and managing databases to deliver scalable
+              and high-performing solutions.
             </p>
           </div>
           <div className="d-flex justify-content-center  justify-content-md-start   w-100 gap-2">
@@ -102,7 +103,11 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
       </video>
 
       <div className="w-md-50 mt-5 pt-5">
-        <a className="text-white text-decoration-none" href="">
+        <a
+          className="text-white text-decoration-none"
+          href="https://lms-client-sage-three.vercel.app/"
+          target="_blank"
+        >
           <h6>
             Readease <CiLocationArrow1 />
           </h6>
@@ -191,8 +196,11 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
               <div className="fw-bold mb-2">Interests:</div>
               <div className="d-flex flex-wrap gap-3">
                 <span className="badge bg-primary p-2">Coding</span>
+                <span className="badge bg-success p-2">
+                  {" "}
+                  Writing Tech blogs
+                </span>
                 <span className="badge bg-info p-2">Music/football</span>
-                <span className="badge bg-success p-2">Learning</span>
               </div>
             </div>
           </div>
