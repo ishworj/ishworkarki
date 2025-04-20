@@ -25,11 +25,16 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
     <Container className="overflow-hidden">
       <Row className="mt-md-5">
         <Col className="d-flex-c-a">
-          <img src="/profilecartoon.png" alt="" />
+          <img
+            src="/cartoon.webp"
+            alt="Cartoon profile"
+            width="350"
+            height="350"
+            style={{ objectFit: "cover" }}
+          />
         </Col>
-        {/* //TODO text cutt on ends */}
-        <Col className="d-flex-c-a flex-column">
-          <div className=" text-white  ">
+        <Col className="d-flex-c-a flex-column px-3">
+          <div className=" text-white w-100">
             <h4 className="typed-effect ">
               Your Next Full-Stack Web Developer
             </h4>
@@ -73,7 +78,7 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
         onHide={() => setContactModalShow(false)}
       />
 
-      <h1 className="text-center pt-5 pt-sm-0">Featured projects</h1>
+      <h1 className="text-center pt-0 pt-sm-5 ">Featured projects</h1>
 
       <div className="w-md-50 mt-5 pt-5">
         <a className="text-white text-decoration-none" href="">
@@ -200,24 +205,17 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
                   {" "}
                   Writing Tech blogs
                 </span>
-                <span className="badge bg-info p-2">Music/football</span>
+                <span className="badge bg-primary p-2">Music/football</span>
               </div>
             </div>
           </div>
 
           <div clas sName="text-center fade-in-right">
-            <div
-              className="border border-3 overflow-hidden rounded-circle "
-              style={{ height: "300px", width: "300px" }}
-            >
-              <img
-                src="/myprofile.png"
-                alt="Ishwor's image"
-                className="img-fluid p-3"
-              />
+            <div className="border border-3 overflow-hidden rounded-circle p-1">
+              <img src="/profile.webp" alt="Ishwor's image" />
             </div>
             <br />
-            <h5 className="text-center">Ishwor Karki</h5>
+            <p className="text-center fs-4 fw-bold">Ishwor Karki</p>
             <p className="text-center">Full stack developer</p>
           </div>
         </div>

@@ -8,32 +8,36 @@ import { GoChevronUp } from "react-icons/go";
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import MyBlogs from "./components/MyBlogs.jsx";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { SiMinutemailer } from "react-icons/si";
 function App() {
-   const [ContactModalShow, setContactModalShow] = React.useState(false);
+  const [ContactModalShow, setContactModalShow] = React.useState(false);
 
-    const [showGoTop, setShowGoTop] = useState(false);
+  const [showGoTop, setShowGoTop] = useState(false);
 
-    const handleScroll = () => {
-      if (window.scrollY > 200) {
-        setShowGoTop(true);
-      } else {
-        setShowGoTop(false);s
-      }
+  const handleScroll = () => {
+    if (window.scrollY > 200) {
+      setShowGoTop(true);
+    } else {
+      setShowGoTop(false);
+      s;
+    }
+  };
+
+  // Add scroll event listener
+  React.useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
     };
-
-    // Add scroll event listener
-    React.useEffect(() => {
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, []);
-    const scrollToTop = () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    };
+  }, []);
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
       <div className="wrapper bg-black" style={{ paddingTop: "70px" }}>
@@ -42,26 +46,26 @@ function App() {
         </div>
 
         <div className="container bg-black text-light">
-          <div className="d-flex gap-3 flex-column logo-container ">
-            <img
-              src="/git.png"
-              alt="git"
+          <div className="d-flex gap-3 flex-column logo-container align-items-center p-1 p-sm-2 bg-dark">
+            <FaGithub
+              className="social-icon"
               onClick={() =>
                 window.open("https://github.com/ishworj", "_blank")
               }
+              style={{ cursor: "pointer" }}
             />
-            <img
-              src="/linked.png"
-              alt="linked"
+            <FaLinkedinIn
+              className="social-icon"
               onClick={() =>
                 window.open(
                   "https://www.linkedin.com/in/ishwor-karki-4b3973272/",
                   "_blank"
                 )
               }
+              style={{ cursor: "pointer", color: "#0e76a8" }}
             />
             <a href="mailto:ishworkarkij11@gmail.com">
-              <img src="/email.png" alt="email" />
+              <SiMinutemailer className="social-icon" />
             </a>
           </div>
 

@@ -22,6 +22,7 @@ const BlogCard = ({ title, description, date, link }) => {
           transition: "transform 0.25s ease-in-out, box-shadow 0.25s",
           boxShadow: hovered ? "0 4px 12px rgba(46, 204, 113, 0.3)" : "none",
           height: window.innerWidth < 550 ? "fit-content" : "150px",
+          overflow:"hidden"
         }}
         className="mb-2 text-white cursor-pointer mx-4 mx-sm-0"
       >
