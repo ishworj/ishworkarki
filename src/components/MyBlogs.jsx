@@ -4,13 +4,20 @@ import BlogCard from "./BlogCard";
 
 const MyBlogs = () => {
   const recentBlog = {
-    title: "How to Build Strong and Secure APIs",
-    description: "A practical guide to building robust REST APIs ",
-    link: "https://dev.to/ishworj/how-to-build-strong-and-secure-apis-4g57",
-    date: "April 15, 2025",
+    title: "Your Website Looks Good, But Is It Actually Good?",
+    description:
+      "A practical guide to website quality beyond visual appeal—covering performance, accessibility, SEO, and more.",
+    link: "https://dev.to/ishworj/your-website-looks-good-but-is-it-actually-good-3gl3",
+    date: "April 20, 2025",
   };
 
   const allBlogs = [
+    {
+      title: "How to Build Strong and Secure APIs",
+      description: "A practical guide to building robust REST APIs ",
+      link: "https://dev.to/ishworj/how-to-build-strong-and-secure-apis-4g57",
+      date: "April 15, 2025",
+    },
     {
       title: "Designing Intuitive and Responsive Interfaces",
       description:
@@ -31,6 +38,7 @@ const MyBlogs = () => {
       link: "https://dev.to/ishworj/redux-a-global-state-management-2i4g",
       date: "January 25, 2025",
     },
+    ,
   ];
 
   return (

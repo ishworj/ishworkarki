@@ -33,11 +33,9 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
             style={{ objectFit: "cover" }}
           />
         </Col>
-        <Col className="d-flex-c-a flex-column px-3">
-          <div className=" text-white w-100">
-            <h4 className="typed-effect ">
-              Your Next Full-Stack Web Developer
-            </h4>
+        <Col className="d-flex-c-a flex-column">
+          <div className=" text-white w-100 pt-3 pt-sm-0">
+            <h4 className="typed-effect  fs-4 fs-sm-2">Your Next Full-Stack Web Developer</h4>
             <h5> Ready to Drive Results:</h5>
             <p>
               Full-Stack Web Developer with hands-on experience in designing,
@@ -78,9 +76,9 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
         onHide={() => setContactModalShow(false)}
       />
 
-      <h1 className="text-center pt-0 pt-sm-5 ">Featured projects</h1>
+      <h1 className="text-center pt-5 pt-sm-5 ">Featured projects</h1>
 
-      <div className="w-md-50 mt-5 pt-5">
+      <div className="w-md-50 mt-5 pt-2 pt-sm-5">
         <a className="text-white text-decoration-none" href="">
           <h6
             onClick={() => {

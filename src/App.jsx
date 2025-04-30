@@ -64,7 +64,7 @@ function App() {
               }
               style={{ cursor: "pointer", color: "#0e76a8" }}
             />
-            <a href="mailto:ishworkarkij11@gmail.com">
+            <a href="mailto:ishworkarkij11@gmail.com" >
               <SiMinutemailer className="social-icon" />
             </a>
           </div>
