@@ -4,14 +4,27 @@ import BlogCard from "./BlogCard";
 
 const MyBlogs = () => {
   const recentBlog = {
-    title: "Your Website Looks Good, But Is It Actually Good?",
+    title: "Image Upload Using Cloudinary + Multer in React.js & Node.js",
     description:
-      "A practical guide to website quality beyond visual appeal—covering performance, accessibility, SEO, and more.",
-    link: "https://dev.to/ishworj/your-website-looks-good-but-is-it-actually-good-3gl3",
-    date: "April 20, 2025",
+      "In this post, I’ll walk you through a simple and practical way to upload images from a React frontend to Cloudinary, using Multer in a Node.js + Express backend.",
+    link: "https://dev.to/ishworj/image-upload-using-cloudinary-multer-in-reactjs-nodejs-35dc",
+    date: "May 9, 2025",
   };
 
   const allBlogs = [
+    {
+      title: "10 Smart Ways to Use Google Maps APIs in Your Projects",
+      description: "Smart Ways to Use Google Maps APIs in Your Projects",
+      link: "https://dev.to/ishworj/10-smart-ways-to-use-google-maps-apis-in-your-projects-2jej",
+      date: "May 3, 2025",
+    },
+    {
+      title: "Your Website Looks Good, But Is It Actually Good?",
+      description:
+        "A practical guide to website quality beyond visual appeal—covering performance, accessibility, SEO, and more.",
+      link: "https://dev.to/ishworj/your-website-looks-good-but-is-it-actually-good-3gl3",
+      date: "April 20, 2025",
+    },
     {
       title: "How to Build Strong and Secure APIs",
       description: "A practical guide to building robust REST APIs ",
