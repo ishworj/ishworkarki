@@ -43,8 +43,8 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
               technologies such as
               <strong className="text-success">
                 {" "}
-                React.js, Node.js, Express.js, MongoDB, JavaScript (ES6), HTML5,
-                and CSS3
+                React.js, Node.js, Express.js, MongoDB, JavaScript, HTML,
+                and CSS
               </strong>
               . Skilled in building responsive user interfaces, creating
               efficient RESTful APIs, and managing databases to deliver scalable
@@ -183,7 +183,7 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
               Full-Stack Web Developer with hands-on experience in designing,
               developing, and deploying modern web applications using
               technologies such as React.js, Node.js, Express.js, MongoDB,
-              JavaScript (ES6), HTML5, and CSS3. Skilled in building responsive
+              JavaScript, HTML, and CSS. Skilled in building responsive
               user interfaces, creating efficient RESTful APIs, and managing
               databases to deliver scalable and high-performing solutions.
             </p>
@@ -209,8 +209,8 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
           </div>
 
           <div clas sName="text-center fade-in-right">
-            <div className="border border-3 overflow-hidden rounded-circle p-1">
-              <img src="/profile.webp" alt="Ishwor's image" />
+            <div className="border border-3 overflow-hidden rounded-circle">
+              <img src="/profile.webp" alt="Ishwor's image"  height={290} width={290} />
             </div>
             <br />
             <p className="text-center fs-4 fw-bold">Ishwor Karki</p>

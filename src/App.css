@@ -2,11 +2,14 @@
   box-sizing: border-box;
 }
 
-html,body {
+html, body {
   margin: 0;
-  padding:0;
-  overscroll-behavior-y: contain;
+  padding: 0;
+  background-color: black;
+  overscroll-behavior: none;
 }
+
+
 
 .btn:hover {
   background-color: #06519b78 !important;
@@ -126,7 +129,7 @@ html,body {
 .footer-navs .nav-link {
   color: white;
   margin-bottom: 0.5rem;
-}
+}a
 
 .footer-navs p {
   font-weight: bold;
