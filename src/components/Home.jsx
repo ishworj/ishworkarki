@@ -35,7 +35,9 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
         </Col>
         <Col className="d-flex-c-a flex-column">
           <div className=" text-white w-100 pt-3 pt-sm-0">
-            <h4 className="typed-effect  fs-4 fs-sm-2">Your Next Full-Stack Web Developer</h4>
+            <h4 className="typed-effect  fs-4 fs-sm-2">
+              Your Next Full-Stack Web Developer
+            </h4>
             <h5> Ready to Drive Results:</h5>
             <p>
               Full-Stack Web Developer with hands-on experience in designing,
@@ -43,8 +45,8 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
               technologies such as
               <strong className="text-success">
                 {" "}
-                React.js, Node.js, Express.js, MongoDB, JavaScript, HTML,
-                and CSS
+                React.js, Node.js, Express.js, MongoDB, JavaScript, HTML, and
+                CSS
               </strong>
               . Skilled in building responsive user interfaces, creating
               efficient RESTful APIs, and managing databases to deliver scalable
@@ -101,7 +103,7 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
         </p>
       </div>
 
-      <video autoPlay loop muted className="h-100 w-100">
+      <video autoPlay loop muted className="w-100">
         <source src="financeTracker.mp4" type="video/mp4" />
       </video>
 
@@ -124,7 +126,7 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
         </p>
       </div>
 
-      <video autoPlay loop muted className="h-100 w-100">
+      <video autoPlay loop muted className="w-100">
         <source src="lms.mp4" type="video/mp4" />
       </video>
 
@@ -177,14 +179,14 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
           <span>About Me</span>
         </h2>
 
-        <div className="container d-flex gap-5  flex-column-reverse flex-md-row  align-items-center ">
-          <div className="my-bio ms-md-5 ">
+        <div className="container d-flex gap-sm-5  flex-column-reverse flex-md-row  align-items-center ">
+          <div className="my-bio ms-md-5 text-justify p-3">
             <p>
               Full-Stack Web Developer with hands-on experience in designing,
               developing, and deploying modern web applications using
               technologies such as React.js, Node.js, Express.js, MongoDB,
-              JavaScript, HTML, and CSS. Skilled in building responsive
-              user interfaces, creating efficient RESTful APIs, and managing
+              JavaScript, HTML, and CSS. Skilled in building responsive user
+              interfaces, creating efficient RESTful APIs, and managing
               databases to deliver scalable and high-performing solutions.
             </p>
 
@@ -210,7 +212,12 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
 
           <div clas sName="text-center fade-in-right">
             <div className="border border-3 overflow-hidden rounded-circle">
-              <img src="/profile.webp" alt="Ishwor's image"  height={290} width={290} />
+              <img
+                src="/profile.webp"
+                alt="Ishwor's image"
+                height={290}
+                width={290}
+              />
             </div>
             <br />
             <p className="text-center fs-4 fw-bold">Ishwor Karki</p>
