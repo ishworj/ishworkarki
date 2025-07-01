@@ -21,7 +21,6 @@ function App() {
       setShowGoTop(true);
     } else {
       setShowGoTop(false);
-      s;
     }
   };
 

@@ -11,13 +11,18 @@ import {
   FaNode,
   FaGithub,
   FaBootstrap,
+  FaAws,
 } from "react-icons/fa";
-import { SiMongodb, SiRedux } from "react-icons/si";
+import {
+  SiDocker,
+  SiMongodb,
+  SiOpenai,
+  SiRedux
+} from "react-icons/si";
 import { LiaHandPointer } from "react-icons/lia";
 import ResumeModal from "./ResumeModal";
 import ContactMeModal from "./ContactMeModal";
 import { CiLocationArrow1 } from "react-icons/ci";
-import SkillTree from "./SkillTree";
 
 const Home = ({ ContactModalShow, setContactModalShow }) => {
   const [modalShow, setModalShow] = React.useState(false);
@@ -169,6 +174,20 @@ const Home = ({ ContactModalShow, setContactModalShow }) => {
             <div className="skill-item">
               <SiRedux size={40} title="Redux" color="#764ABC" />
               <p>Redux</p>
+            </div>
+            <div className="skill-item">
+              <SiDocker size={40} title="Docker" color="#2496ED" />
+              <p>Docker</p>
+            </div>
+
+            <div className="skill-item">
+              <FaAws size={40} title="AWS" color="#FF9900" />
+              <p>AWS</p>
+            </div>
+
+            <div className="skill-item">
+              <SiOpenai size={40} title="AI / OpenAI" color="#10A37F" />
+              <p>AI</p>
             </div>
           </div>
         </div>
